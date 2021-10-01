@@ -12,9 +12,11 @@ public class HellowordApplication {
 	
 	@Autowired
 	private BusinessService bs; 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(HellowordApplication.class, args);
 	}
+	
 	public void run(String... args) throws Exception{
 		HelloWorld hw = bs.getHelloWorld();
 		System.out.println(hw);
